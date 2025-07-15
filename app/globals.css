@@ -76,6 +76,11 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --button-primary-default: (#043B64);
+  --button-primary-hover: (#112444);
+  --button-primary-active: (#92A8C0);
+  --text-orange-default: (#FF8A18);
+  --text-blue-default: (#043B64);
 }
 
 .dark {
@@ -110,6 +115,9 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  --button-primary-default: (#C0CDD7);
+  --button-primary-hover: (#112444);
+  --button-primary-active: (#92A8C0);
 }
 
 @layer base {

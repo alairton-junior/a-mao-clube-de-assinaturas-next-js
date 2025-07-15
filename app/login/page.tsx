@@ -27,21 +27,29 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="p-8 flex justify-center items-center min-h-screen">
+      <div 
+      className="p-8 flex justify-center items-center min-h-screen bg-cover bg-center"
+      style={{ backgroundImage: "url('/images/background/Login.png')" }}
+    >
       <Button variant="ghost" asChild className="absolute top-8 right-8">
         <Link href="/sign-in">Fazer Login</Link>
       </Button>
-      <div className="flex w-[320px] flex-col justify-center gap-6 bg-white p-8 rounded shadow">
-        <div className="flex flex-col gap-2 text-center">
-          <h1 className="text-2xl font-semibold tracking-tight">
+      <div className="flex flex-col justify-center items-center lg:w-1/3 md:w-1/2 sm:w-1/2 h-100 gap-6 bg-white rounded shadow">
+        <img className="w-20"  src="/images/Logo.png" alt="" />
+        {/* <div className="flex flex-col gap-2 text-start">
+          <h1 className="text-2xl font-semibold tracking-tight var(--text-orange)">
             Login
           </h1>
-        </div>
+        </div> */}
+        <h1 className="text-2xl font-semibold tracking-tight text-start" style={{ color: "var(--text-blue)" }}>
+            Login
+          </h1>
 
         <form onSubmit={handleSubmit(handleSignIn)} className="space-y-4">
           <div className="space-y-2">
-            <Label htmlFor="username">Username</Label>
+            {/* <Label htmlFor="username">Username</Label> */}
             <Input
+              placeholder="Email"
               id="username"
               type="text"
               {...register("username", { required: "Informe o usuário" })}
@@ -52,18 +60,20 @@ export default function LoginPage() {
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="password">Senha</Label>
+            {/* <Label htmlFor="password">Senha</Label> */}
             <Input
+              placeholder= "Senha"
               id="password"
               type="password"
               {...register("password", { required: "Informe a senha" })}
+              
             />
             {errors.password && (
               <span className="text-xs text-red-500">{errors.password.message}</span>
             )}
           </div>
           <Button type="submit" className="w-full">
-            Entrar
+            Login
           </Button>
         </form>
       </div>
