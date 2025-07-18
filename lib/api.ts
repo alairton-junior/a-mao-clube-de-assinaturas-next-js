@@ -8,14 +8,13 @@ const api = axios.create({
 // Adiciona o token automaticamente no header
 api.interceptors.request.use((config) => {
   if (typeof window !== 'undefined') {
-    const acess = localStorage.getItem('acess');
-    if (acess && acess !== "undefined" && acess !== "null") {
-      config.headers.Authorization = `Bearer ${acess}`;
+    const access = localStorage.getItem('access');
+    if (access && access !== "undefined" && access !== "null") {
+      config.headers.Authorization = `Bearer ${access}`;
     } else {
       delete config.headers.Authorization;
     }
   }
   return config;
 });
-
 export default api;
