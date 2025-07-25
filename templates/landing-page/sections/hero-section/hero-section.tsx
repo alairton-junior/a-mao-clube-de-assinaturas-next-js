@@ -25,9 +25,8 @@ export const HeroSection = () => {
         </h2>
 
         <p className="max-w-1/2 text-gray-600">
-          Explore o prazer de criar com as próprias mãos. Receba kits manuais
-          com tudo o que você precisa para transformar tempo livre em momentos
-          de cuidado, arte e expressão.
+          Receba kits manuais com tudo o que você precisa para transformar tempo
+          livre em momentos de cuidado, arte e expressão.
         </p>
 
         <div>
