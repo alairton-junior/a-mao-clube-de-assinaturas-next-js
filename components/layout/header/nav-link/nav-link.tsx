@@ -20,7 +20,7 @@ export function NavLink({
     <Link
       href={href}
       data-current={pathname === href}
-      className={`text-muted-foreground hover:text-foreground data-[current=true]:text-foreground flex items-center gap-1.5 text-sm font-medium ${className}`}
+      className={`text-primary hover:text-primary/70 data-[current=true]:text-foreground md:p-1 flex items-center gap-1.5 text-base font-medium ${className}`}
       {...props}
     >
       {children}

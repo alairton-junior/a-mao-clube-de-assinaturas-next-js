@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { Header } from "@/components/header";
+import { Header } from "@/components/layout/header/header";
 import api from "@/lib/api";
 
 export default function ProfilePage() {
@@ -11,7 +11,8 @@ export default function ProfilePage() {
   const router = useRouter();
 
   useEffect(() => {
-    api.get("/auth/me/")
+    api
+      .get("/auth/me/")
       .then((res) => {
         setUser(res.data);
       })

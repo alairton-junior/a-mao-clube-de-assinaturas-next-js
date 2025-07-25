@@ -45,20 +45,20 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --background: oklch(0.9528 0.0129 84.47);
+  --foreground: oklch(0.3435 0.0887 247.83);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: oklch(0.3435 0.0887 247.83);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
   --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --accent-foreground: oklch(0.3435 0.0887 247.83);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
@@ -76,11 +76,11 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-  --button-primary-default: (#043B64);
+  --button-primary-default: (#043b64);
   --button-primary-hover: (#112444);
-  --button-primary-active: (#92A8C0);
-  --text-orange-default: (#FF8A18);
-  --text-blue-default: (#043B64);
+  --button-primary-active: (#92a8c0);
+  --text-orange-default: (#ff8a18);
+  --text-blue-default: (#043b64);
 }
 
 .dark {
@@ -115,9 +115,9 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
-  --button-primary-default: (#C0CDD7);
+  --button-primary-default: (#c0cdd7);
   --button-primary-hover: (#112444);
-  --button-primary-active: (#92A8C0);
+  --button-primary-active: (#92a8c0);
 }
 
 @layer base {
@@ -127,4 +127,16 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.text-libre-caslon {
+  font-family: var(--font-libre-caslon-text), serif;
+}
+
+.text-poppins {
+  font-family: var(--font-poppins), sans-serif;
+}
+
+p {
+  @apply text-xs md:text-base;
 }
