@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { DialogTitle } from "@/components/ui/dialog";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Link, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import { NavMenu } from "../nav-menu";
+import Link from "next/link";
 
 export const MobileMenu = () => {
   return (
