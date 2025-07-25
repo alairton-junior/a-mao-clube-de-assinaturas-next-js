@@ -2,11 +2,17 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { Header } from "@/components/layout/header/header";
+
 import api from "@/lib/api";
 
+interface User {
+  username: string;
+  email: string;
+  name: string;
+}
+
 export default function ProfilePage() {
-  const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
   const router = useRouter();
 
@@ -32,7 +38,6 @@ export default function ProfilePage() {
   if (loading) {
     return (
       <>
-        <Header />
         <main className="flex flex-col items-center justify-center min-h-screen p-8">
           <p>Carregando...</p>
         </main>
@@ -42,7 +47,6 @@ export default function ProfilePage() {
 
   return (
     <>
-      <Header />
       <main className="flex flex-col items-center justify-center min-h-screen p-8">
         <h1 className="text-3xl font-bold mb-4">Meu Perfil</h1>
         {user ? (

@@ -9,7 +9,7 @@ export const TargetAudienceSection = () => {
           Para quem é o <span className="text-orange-500">À Mão</span>?
         </h2>
 
-        <div className="grid grid-cols-1 gap-4 md:gap-12 mt-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-12 mt-12">
           <div className="rounded-2xl bg-white p-6 shadow-md hover:shadow-lg transition-all">
             <Users className="w-6 h-6 text-orange-400 mb-4" />
             <p className="text-base leading-relaxed text-gray-600">
