@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { DialogTitle } from "@/components/ui/dialog";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
+import { Link, Menu } from "lucide-react";
 import { NavMenu } from "../nav-menu";
 
 export const MobileMenu = () => {
@@ -24,9 +24,11 @@ export const MobileMenu = () => {
           <NavMenu className="flex-col items-start space-y-4 mb-4" />
 
           <div className="flex gap-2">
-            <Button variant="outline" className="text-primary">
-              Login
-            </Button>
+            <Link href="/login">
+              <Button variant="outline" className="text-primary">
+                Login
+              </Button>
+            </Link>
             <Button className="text-sm">Assine</Button>
           </div>
         </div>
