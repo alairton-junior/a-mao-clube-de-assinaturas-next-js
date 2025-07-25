@@ -20,9 +20,11 @@ export function Header() {
         <NavMenu className="hidden sm:flex" />
 
         <div className="flex gap-2">
-          <Button size={"lg"} variant="outline" className="hidden md:block">
-            Login
-          </Button>
+          <Link href="/login">
+            <Button size={"lg"} variant="outline" className="hidden md:block">
+              Login
+            </Button>
+          </Link>
           <Button size={"lg"} className="hidden md:block">
             Assine
           </Button>
