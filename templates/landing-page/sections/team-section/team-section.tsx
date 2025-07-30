@@ -8,7 +8,7 @@ const team = [
   },
   {
     name: "Isabelle Oliveira",
-    role: "Conteúdo & Manualidades",
+    role: "Desenvolvedora Front-end",
     img: "/images/team/isabelle.png",
   },
   {
@@ -18,7 +18,7 @@ const team = [
   },
   {
     name: "Jamyle Layla",
-    role: "Marketing & Social",
+    role: "Desenvolvedor Front-end",
     img: "/images/team/jamyle.png",
   },
   {
@@ -28,7 +28,7 @@ const team = [
   },
   {
     name: "Kelvin Erick",
-    role: "Designer Gráfico",
+    role: "Desenvolvedor Back-end",
     img: "/images/team/kelvin.png",
   },
 ];
