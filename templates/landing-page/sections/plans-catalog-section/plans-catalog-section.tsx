@@ -1,9 +1,9 @@
-import { AquarelaIcon } from "@/components/icons/aquarela-icon";
-import { BordadoIcon } from "@/components/icons/bordado-icon";
-import { CrocheIcon } from "@/components/icons/croche-icon";
-import { DesenhoIcon } from "@/components/icons/desenho-icon";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Image from "next/image";
+import { Aquarela } from "./aquarela";
+import { Croche } from "./croche";
+import { Bordado } from "./bordado";
+import { Desenho } from "./desenho";
 
 export const PlansCatalogSection = () => {
   return (
@@ -36,27 +36,40 @@ export const PlansCatalogSection = () => {
           </h2>
           <p className="max-w-xl text-center text-2xl">
             Nossa comunidade reúne pessoas em busca de bem-estar, foco e
-            expressão. <AquarelaIcon />
+            expressão.
           </p>
-          <Tabs defaultValue="monthly" className="w-full mt-8">
+          <Tabs defaultValue="aquarela" className="w-full mt-8">
             <TabsList className="mx-auto bg-white">
-              <TabsTrigger value="aquarela">
-                <AquarelaIcon/>
-                Aquarela
-              </TabsTrigger>
-              <TabsTrigger value="croche">
-                <CrocheIcon/>
-                Crochê
-              </TabsTrigger>
-              <TabsTrigger value="desenho">
-                <DesenhoIcon/>
-                Desenho
-              </TabsTrigger>
-              <TabsTrigger value="bordado">
-                <BordadoIcon/>
-                Bordado
-              </TabsTrigger>
+              <TabsTrigger value="aquarela">Aquarela</TabsTrigger>
+              <TabsTrigger value="croche">Crochê</TabsTrigger>
+              <TabsTrigger value="desenho">Desenho</TabsTrigger>
+              <TabsTrigger value="bordado">Bordado</TabsTrigger>
             </TabsList>
+
+            <TabsContent
+              value="aquarela"
+              className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-8 items-start"
+            >
+              <Aquarela />
+            </TabsContent>
+            <TabsContent
+              value="croche"
+              className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-8 items-start"
+            >
+              <Croche />
+            </TabsContent>
+            <TabsContent
+              value="bordado"
+              className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-8 items-start"
+            >
+              <Bordado />
+            </TabsContent>
+            <TabsContent
+              value="desenho"
+              className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-8 items-start"
+            >
+              <Desenho />
+            </TabsContent>
           </Tabs>
         </div>
       </div>

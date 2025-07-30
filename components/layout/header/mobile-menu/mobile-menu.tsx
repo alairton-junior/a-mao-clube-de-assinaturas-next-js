@@ -25,11 +25,10 @@ export const MobileMenu = () => {
           <NavMenu className="flex-col items-start space-y-4 mb-4" />
 
           <div className="flex gap-2">
-            <Link href="/login">
-              <Button variant="outline" className="text-primary">
-                Login
-              </Button>
-            </Link>
+            <Button variant="outline" className="text-primary">
+              <Link href="/login">Login</Link>
+            </Button>
+
             <Button className="text-sm">Assine</Button>
           </div>
         </div>
