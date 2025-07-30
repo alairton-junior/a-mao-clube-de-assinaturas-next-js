@@ -12,10 +12,10 @@ export const LandingPage = () => {
       <HeroSection />
       <HowItWorksSection />
       <TargetAudienceSection />
-
+      <PlansCatalogSection />
       <KitAMao />
       <TutorialsSection />
-      <PlansCatalogSection />
+
       <Team />
     </article>
   );

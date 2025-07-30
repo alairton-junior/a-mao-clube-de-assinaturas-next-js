@@ -35,7 +35,7 @@ const team = [
 
 export const Team = () => {
   return (
-    <section className="relative flex flex-col items-center gap-10 p-6 py-52 md:px-12 bg-white">
+    <section className="relative flex flex-col items-center gap-10 p-6 py-52 md:px-12 ">
       <Image
         src={"/images/decor/lines-pink.png"}
         alt="Formas Orgânicas"
